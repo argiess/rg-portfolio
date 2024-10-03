@@ -510,6 +510,7 @@ a{
   }
   button[aria-expanded='true'] {
     color: var(--color4);
+    background: #111;
     .icon {
       &::after {
         width: 0;
