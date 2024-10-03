@@ -371,7 +371,6 @@ a{
     font-weight: 500;
 }
 .reviews p{
-    font-size: 1.5rem;
     color: #111;
 }
 
@@ -382,7 +381,7 @@ a{
 .review-card{
     background: url(../imgs/bg.jpg)no-repeat;
     background-size: cover;
-    border: 1.5px solid #123;
+    /* border: 1.5px solid #123; */
     border-radius: 15px;
     margin-bottom: 1.5rem;
     padding: 2.5rem;
