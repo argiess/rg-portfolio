@@ -356,6 +356,73 @@ a{
 }
 /* PORTFOLIO END */
 
+/* REVIEWS START */
+.reviews{
+    width: 100%;
+    padding: 6rem 12%;
+}
+
+.reviews .center{
+    text-align: center;
+}
+
+.reviews h2{
+    font-size: 3.3rem;
+    font-weight: 500;
+}
+.reviews p{
+    font-size: 1.5rem;
+    color: #111;
+}
+
+.review-content{
+    margin-top: 2.5rem;
+}
+
+.review-card{
+    background: url(../imgs/bg.jpg)no-repeat;
+    background-size: cover;
+    border: 1.5px solid #123;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    padding: 2.5rem;
+}
+
+.review-card img{
+    width: 10rem;
+    height: 8rem;
+    margin-right: .5rem;
+    border-radius: 50%;
+}
+
+.review-card h3{
+    font-size: 2.5rem;
+    color: #123;
+}
+
+.review-card .info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.review-card p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    opacity: .7;
+    color: #123;
+}
+
+.rating{
+    margin-top: 1.5rem;
+}
+
+.rating i{
+    font-size: 1.5rem;
+    color: #ffa700;
+}
+/* REVIEWS END */
+
 /* PS START */
 .ps{
     text-align: center;
@@ -368,6 +435,112 @@ a{
     color: var(--color3);
 }
 /* PS END */
+
+/* FAQ START */
+.container {
+  margin: 0 auto;
+  padding: 6rem 24%;
+  width: 100%;
+}
+.container h2{
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+
+.accordion {
+  .accordion-item {
+    border-bottom: 1.5px solid #123;
+    button[aria-expanded='true'] {
+      border-bottom: 1.5px solid #123;
+    }
+  }
+  button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+    &:hover, &:focus {
+      cursor: pointer;
+      color: var(--color0);
+      background: #111;
+      &::after {
+        cursor: pointer;
+        color: #111;
+        border: 1px solid #123;
+      }
+    }
+    .accordion-title {
+      padding: 1em 1.5em 1em 0;
+    }
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 15px;
+      right: .2rem;
+      width: 22px;
+      height: 22px;
+      border: 1.5px solid;
+      border-radius: 22px;
+      &::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+      }
+    }
+  }
+  button[aria-expanded='true'] {
+    color: var(--color0);
+    .icon {
+      &::after {
+        width: 0;
+      }
+    }
+    + .accordion-content {
+      opacity: 1;
+      max-height: 20em;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+    }
+  }
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    background: #fff;
+    p {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin: 2em 0;
+      padding: .2rem 1em;
+      color: #000;
+      border: 1.5px solid #000;
+    }
+  }
+}
+/* FAQ END */
 
 /* CONTACT START */
 .contact{

@@ -58,6 +58,15 @@
 }
 /* HEADER MEDIA END */
 
+/* 900PX DOWN */
+@media (max-width: 880px){
+    /* FAQ MEDIA START */
+    .container {
+        padding: 6rem 6%;
+        width: 100%;
+      }
+}
+
 /* 600PX DOWN */
 @media (max-width: 580px) {
     /* ABOUT MEDIA START */
@@ -84,6 +93,24 @@
         font-size: 1.2rem;
     }
     /* PORTFOLIO MEDIA END */
+
+    /* FAQ MEDIA START */
+    .container {
+        padding: 6rem 1.5rem;
+        width: 100%;
+    }
+    .container button{
+        padding-left: .5rem;
+    }
+    /* FAQ MEDIA END */
+}
+
+@media (max-width: 400px) {
+    /* REVIEWS MEDIA START */
+    .review-card .info{
+        flex-direction: column;
+    }
+    /* REVIEWS MEDIA END */
 }
 
 @media (max-width: 456px) {

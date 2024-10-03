@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Developer - Portfolio Website</title>
+    <title>Argie Piamonte - Portfolio Website</title>
     <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
 
     <!-- ICONS -->
@@ -12,6 +12,10 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- JS -->
     <script src="./js/script.js" defer></script>
@@ -45,7 +49,7 @@
     <section class="hero__section">
         <div class="hero__center">
             <h1>Hi, My name is Argie</h1>
-            <h2>Freelance Web Developer</h2>
+            <h2>Freelance Developer</h2>
             <a href="#portfolio">View Portfolio</a>
             <div id="about"></div>
         </div>
@@ -57,7 +61,7 @@
         <div class="left">
             <p>Hello, Welcome</p>
             <h2>I am Argie Piamonte</h2>
-            <p class="text">I'm a freelancer. I build websites like landing pages, business websites, and portfolios to help businesses to have their own website and start generating more leads, increase their sales, and make a lot of money.</p>
+            <p class="text">I'm a freelancer. I build websites like landing pages, business websites, and portfolios to help businesses to have their own website and start generating more leads, increase their sales, and have a strong presence online.</p>
 
             <div class="socials">
                 <a href="https://www.facebook.com/argie.piamonte.35" target="_blank"><i class="ri-facebook-line fb"></i></a>
@@ -125,11 +129,73 @@
     </section>
     <!-- PORTFOLIO END -->
 
+    <!-- TESTIMONIALS - CLIENT'S REVIEWS START -->
+    <section class="reviews">
+        <div class="reviews-container">
+            <div class="center">
+                <h2>Reviews</h2>
+                <p>This is my client's genuine review/comments about me and my work.</p>
+            </div>
+  
+            <div class="review-content">
+                <!-- Slider main container -->
+                <div class="swiper review-slider js-review-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper slider-wrapper">
+                        <!-- CLIENT'SLIDE CARD 1 START -->
+                        <div class="swiper-slide review-card">
+                            <div class="info">
+                                <img src="./imgs/clients/john_doe.jpg" alt="john doe">
+                                <h3>John Doe</h3>
+                            </div>
+  
+                            <p>"I couldn't be more thrilled with my purchase! The quality of the template exceeded my expectations, and it has made a significant difference in my business. The customer service was also top-notch, answering all my questions promptly. I highly recommend to anyone looking for reliable and high-quality products!"</p>
+  
+                            <div class="rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                        <!-- CLIENT'SLIDE CARD 1 END -->
+
+                        <!-- CLIENT'SLIDE CARD 2 START -->
+                        <div class="swiper-slide review-card">
+                            <div class="info">
+                                <img src="./imgs/clients/zypherr_logo.png" alt="zypherr">
+                                <h3>Zypherr</h3>
+                            </div>
+  
+                            <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque quo obcaecati animi doloremque non incidunt dicta quaerat nesciunt sunt ratione reprehenderit at rerum sed reiciendis quae, perferendis voluptatum ipsum facilis."</p>
+  
+                            <div class="rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </div>
+                        <!-- CLIENT'SLIDE CARD 2 END -->
+  
+                        
+                        <!-- ADD CLIENT/S CARD ABOVE -->
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination js-reviews-pagination"></div>
+            </div>
+        </div>
+     </section>
+    <!-- TESTIMONIALS - CLIENT'S REVIEWS END -->
+
     <!-- CONTACT START -->
     <div id="contact"></div>
-    <div class="ps">
+    <!-- <div class="ps">
         <p>Let's work together!</p>
-    </div>
+    </div> -->
     <section class="contact">
         <h2>Contact me</h2>
         <p>Let's Make Great Things Happen Together</p>
@@ -148,7 +214,7 @@
 
                     <label for="msg">Send me a message</label><br>
                     <textarea name="message" id="msg" placeholder="Let's talk about your website.." required></textarea><br>
-                    <button type="submit">Send message <i class="ri-expand-right-line"></i></button>
+                    <button type="submit">Send message <i class="ri-send-plane-fill"></i></button>
                 </form>
             </div>
 
@@ -169,6 +235,72 @@
         </div>
     </section>
     <!-- CONTACT END -->
+
+    <!-- FAQ START -->
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What is a static website?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>A static website is a site that consists of fixed content – the same information is displayed to every visitor. It doesn't rely on databases or dynamic updates, making it faster, more secure, and easier to maintain.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why should I choose a static website for my small business?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Static websites are perfect for small businesses that don’t require constant updates or advanced functionalities like e-commerce. They load quickly, are highly secure, and are more affordable to develop and host than dynamic websites.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">How much does it cost to build a static website?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>The cost varies depending on your specific needs, but static websites tend to be more affordable than dynamic sites due to their simplicity. Contact us for a custom quote tailored to your business.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Can I update my static website?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>While static websites are not designed for frequent updates, we can implement simple tools or guides for you to make basic content changes, such as updating text or images. Alternatively, we offer affordable update services.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Do static websites support SEO (Search Engine Optimization)?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Absolutely! We build all our websites with SEO best practices, helping your site rank higher on search engines like Google, so more customers can find you.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How long does it take to build a static website?
+            </span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>The timeline depends on the complexity of the project, but most static websites are ready within 1-2 weeks from the start of the project.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What content do I need to provide?
+            </span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>We’ll need key information about your business, such as services offered, contact details, and any images or branding materials (like a logo) you’d like to include. Don’t worry, we’ll guide you through the process!</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Will my website be secure?
+            </span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Yes! Static websites are naturally more secure than dynamic sites because they don't rely on databases, reducing the risk of hacking or malware. We also recommend using HTTPS for added security.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Do I need ongoing maintenance for my website?
+            </span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>No ongoing maintenance is required for static websites. Since there’s no complex backend system, they are stable and require fewer updates, saving you time and money.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FAQ END -->
 
     <!-- FOOTER START -->
     <footer class="footer">
