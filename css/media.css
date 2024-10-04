@@ -60,11 +60,11 @@
 
 /* 1000PX DOWN */
 @media(max-width: 1000px){
-    /* BENEFITS MEDIA START */
-    .benefits .b{
+    /* SERVICES MEDIA START */
+    .services .b{
         order: 3;
     }
-    /* BENEFITS MEDIA END */
+    /* SERVICES MEDIA END */
 }
 
 @media (max-width: 880px){
