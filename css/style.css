@@ -274,46 +274,46 @@ a{
 }
 /* LOGO ICONS SLIDER END */
 
-/* BENEFITS SECTION START */
-.benefits{
+/* SERVICES SECTION START */
+.services{
     width: 100%;
     height: fit-content;
     padding: 6rem 5%;
-    border-bottom: 1px solid var(--color0);
+    /* border-bottom: 1px solid var(--color0); */
     align-items: center;
     background-color: #123;
 }
 
-.benefits h2, .benefits p{
+.services h2, .services p{
     padding: 0 8%;
     color: var(--color0);
 }
-.benefits p{
+.services p{
     color: var(--color4);
     margin-bottom: 3.5rem;
 }
 
-.benefits img{
+.services img{
     display: block;
     max-width: 100%;
     width: 8rem;
 }
 
-.benefits h3{
+.services h3{
     font-family: var(--font3);
     font-size: 2.5rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
 }
 
-.benefits li{
+.services li{
     font-family: var(--font1);
     font-size: 1.4rem;
     font-weight: 500;
     margin-bottom: 1.2rem;
 }
 
-.benefits .div{
+.services .div{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -321,19 +321,55 @@ a{
     gap: 5.5rem;
 }
 
-.benefits .card{
+.services .card{
     padding: 2.5rem;
     border-radius: 5px;
     background: #fff;
 }
 
-.benefits .center{
+.services .center{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-/* BENEFITS SECTION END */
+
+.services .pricing{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 1rem 0;
+    border-radius: 5px;
+    color: var(--color0);
+    background: #123;
+}
+
+.other{
+    width: 100%;
+    padding: 3rem 6%;
+}
+.other .center{
+    text-align: center;
+}
+.other .center p{
+    color: #111;
+    margin-bottom: 3.5rem;
+}
+
+.other h3{
+    font-size: 2.5rem;
+}
+.other .div{
+    margin: 2.5rem 0;
+}
+.other .div p{
+    color: #111;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin: .6rem 0;
+}
+/* SERVICES SECTION END */
 
 /* PORTFOLIO START */
 .portfolio{
