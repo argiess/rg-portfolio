@@ -58,13 +58,22 @@
 }
 /* HEADER MEDIA END */
 
-/* 900PX DOWN */
+/* 1000PX DOWN */
+@media(max-width: 1000px){
+    /* BENEFITS MEDIA START */
+    .benefits .b{
+        order: 3;
+    }
+    /* BENEFITS MEDIA END */
+}
+
 @media (max-width: 880px){
     /* FAQ MEDIA START */
     .container {
         padding: 6rem 6%;
         width: 100%;
       }
+    /* FAQ MEDIA END */
 }
 
 /* 600PX DOWN */

@@ -274,6 +274,67 @@ a{
 }
 /* LOGO ICONS SLIDER END */
 
+/* BENEFITS SECTION START */
+.benefits{
+    width: 100%;
+    height: fit-content;
+    padding: 6rem 5%;
+    border-bottom: 1px solid var(--color0);
+    align-items: center;
+    background-color: #123;
+}
+
+.benefits h2, .benefits p{
+    padding: 0 8%;
+    color: var(--color0);
+}
+.benefits p{
+    color: var(--color4);
+    margin-bottom: 3.5rem;
+}
+
+.benefits img{
+    display: block;
+    max-width: 100%;
+    width: 8rem;
+}
+
+.benefits h3{
+    font-family: var(--font3);
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.benefits li{
+    font-family: var(--font1);
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.benefits .div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5.5rem;
+}
+
+.benefits .card{
+    padding: 2.5rem;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.benefits .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/* BENEFITS SECTION END */
+
 /* PORTFOLIO START */
 .portfolio{
     width: 100%;
