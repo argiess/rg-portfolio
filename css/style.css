@@ -454,6 +454,10 @@ a{
 .cards .btn__div .b{
     background: transparent;
 }
+
+.tag{
+    color: var(--color4);
+}
 /* PORTFOLIO END */
 
 /* REVIEWS START */
