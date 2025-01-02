@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root{
     --color0: #F1F6F9;
@@ -9,7 +10,8 @@
 
     --font1: 'Poppins';
     --font2: 'Caveat';
-    --font3: 'Poetsen One';
+    --font3: 'Rubik';
+    --font4: 'Poetsen One';
 }
 
 *{
@@ -146,13 +148,13 @@ a{
     -ms-transform: translate(-50%, -50%); */
 }
 .hero__section h1{
-    font-family: var(--font3);
+    font-family: var(--font4);
     font-size: 3.2rem;
     font-weight: 500;
 }
 .hero__section h2{
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 0;
     margin-bottom: 5.5rem;
     color: var(--color4);
@@ -181,7 +183,7 @@ a{
     gap: 12rem;
     color: var(--color0);
     background: #123;
-    border-bottom: 1.5px solid var(--color1);
+    /* border-bottom: 1.5px solid var(--color1); */
 }
 .about__section h2{
     background: linear-gradient(to right, var(--color0), var(--color1));
@@ -251,6 +253,7 @@ a{
     height: 100%;
     background: var(--color0);
     padding: 2.4rem 0;
+    border-bottom: 1.5px solid var(--color3);
 }
 .slider{
     overflow: hidden;
@@ -276,6 +279,78 @@ a{
     }
 }
 /* LOGO ICONS SLIDER END */
+
+
+/* BENEFITS */
+.benefits{
+    width: 100%;
+    padding: 4rem 4%;
+}
+
+.benefits .center{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.benefits .center h2{
+    font-family: var(--font3);
+    font-size: 4rem;
+}
+.benefits .center p{
+    color: var(--color3);
+    font-weight: 500;
+}
+
+.benefits .benefits-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem .5rem;
+}
+
+.benefits-card .cards-row{
+    padding: 0 .5px;
+}
+
+.benefits-card .card{
+    display: block;
+    width: 100%;
+    background: #69a8f1;
+    border-radius: 25px;
+    margin-top: 1.5rem;
+    padding: 2.5rem;
+}
+
+.benefits-card .card img{
+    width: 10rem;
+}
+
+.benefits-card .card h3{
+    font-family: var(--font3);
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #111;
+    margin-bottom: 1.5rem;
+}
+
+.benefits-card .card p{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #123;
+}
+
+.benefits-card .dark-card{
+    background: #123;
+}
+
+.benefits-card .dark-card h3{
+    color: #69a8f1;
+}
+
+.benefits-card .dark-card p{
+    color: #e3e2e2;
+}
+
 
 /* SERVICES SECTION START */
 .services{
@@ -303,10 +378,9 @@ a{
 }
 
 .services h3{
-    font-family: var(--font3);
+    font-family: var(--font4);
     font-size: 2.5rem;
     font-weight: 400;
-    margin-bottom: 1.5rem;
 }
 
 .services li{
@@ -374,6 +448,7 @@ a{
 }
 /* SERVICES SECTION END */
 
+
 /* PORTFOLIO START */
 .portfolio{
     width: 100%;
@@ -400,7 +475,7 @@ a{
     margin: 4rem 0 0;
 }
 .cards .card{
-    display: block;
+    /* display: block; */
     max-width: 100%;
     max-height: 100%;
     padding: 2rem;
@@ -458,6 +533,44 @@ a{
 .tag{
     color: var(--color4);
 }
+
+.content{
+    display: none;
+    transition: 3s ease-in-out;
+}
+.show{
+    display: block;
+    transition: 3s ease-in-out;
+}
+
+/* CATEGORY FILTER */
+.choose-category{
+    margin-top: 3.5rem;
+}
+
+#portfolio .btn {
+    color: var(--color0);
+    background: transparent;
+    font-family: var(--font1);
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: 1.5px solid var(--color0);
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    margin: .5rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+#portfolio .btn:hover {
+    color: var(--color3);
+    background: var(--color4);
+    border-color: var(--color4);
+}
+#portfolio .btn.active {
+    color: var(--color3);
+    background-color: var(--color4);
+    border-color: var(--color4);
+}
 /* PORTFOLIO END */
 
 /* REVIEWS START */
@@ -471,8 +584,8 @@ a{
 }
 
 .reviews h2{
-    font-size: 3.3rem;
-    font-weight: 500;
+    font-size: 3.5rem;
+    font-weight: 600;
 }
 .reviews p{
     color: #111;
@@ -540,12 +653,12 @@ a{
 /* PS END */
 
 /* FAQ START */
-.container {
+.faq {
   margin: 0 auto;
   padding: 6rem 24%;
   width: 100%;
 }
-.container h2{
+.faq h2{
     font-weight: 500;
     margin-bottom: 2.5rem;
 }

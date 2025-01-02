@@ -69,7 +69,7 @@
 
 @media (max-width: 880px){
     /* FAQ MEDIA START */
-    .container {
+    .faq {
         padding: 6rem 6%;
         width: 100%;
       }
@@ -104,11 +104,11 @@
     /* PORTFOLIO MEDIA END */
 
     /* FAQ MEDIA START */
-    .container {
+    .faq {
         padding: 6rem 1.5rem;
         width: 100%;
     }
-    .container button{
+    .faq button{
         padding-left: .5rem;
     }
     /* FAQ MEDIA END */
@@ -228,4 +228,14 @@
         font-size: 1.5rem;
     }
     /* PORTFOLIO MEDIA END */
+}
+
+/* BENEFITS MEDIA */
+@media (max-width: 900px){
+    .benefits .benefits-card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .benefits-card .cards-row{
+        max-width: 100%;
+    }
 }
