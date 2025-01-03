@@ -186,6 +186,7 @@ a{
     /* border-bottom: 1.5px solid var(--color1); */
 }
 .about__section h2{
+    font-family: var(--font4);
     background: linear-gradient(to right, var(--color0), var(--color1));
     color: transparent;
     background-clip: text;
