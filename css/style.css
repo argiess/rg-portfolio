@@ -363,6 +363,9 @@ a{
     background-color: #123;
 }
 
+.services h2{
+    font-family: var(--font4);
+}
 .services h2, .services p{
     padding: 0 8%;
     color: var(--color0);
@@ -429,6 +432,9 @@ a{
     width: 100%;
     padding: 3rem 12%;
 }
+.other h2{
+    font-family: var(--font4);
+}
 .other .center{
     text-align: center;
 }
@@ -458,6 +464,9 @@ a{
     background: #123;
     color: var(--color0);
     padding: 6rem 12%;
+}
+.portfolio h2{
+    font-family: var(--font4);
 }
 .portfolio p{
     color: var(--color4);
@@ -662,6 +671,7 @@ a{
   width: 100%;
 }
 .faq h2{
+    font-family: var(--font4);
     font-weight: 500;
     margin-bottom: 2.5rem;
 }
@@ -773,6 +783,7 @@ a{
     background-blend-mode: multiply;
 }
 .contact h2{
+    font-family: var(--font4);
     color: var(--color0);
 }
 .contact p{
