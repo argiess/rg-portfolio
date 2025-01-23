@@ -152,17 +152,18 @@ a{
     font-size: 5.5rem;
     font-weight: 600;
     text-transform: uppercase;
+    margin-bottom: 1.5rem;
     padding: 0 1.5rem;
 }
-.hero__section h2{
+.hero__section p{
     font-family: var(--font3);
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 1px;
-    /* line-height: 0; */
     margin-bottom: 8rem;
     padding: 0 10%;
-    color: var(--color4);
+    color: var(--color0);
+    opacity: .95;
 }
 .hero__section a{
     font-size: 1.5rem;
