@@ -162,7 +162,7 @@ a{
     letter-spacing: 1px;
     margin-bottom: 8rem;
     padding: 0 10%;
-    color: #69a8f1;
+    color: var(--color4);
 }
 .hero__section a{
     font-size: 1.5rem;
